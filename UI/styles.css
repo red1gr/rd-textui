@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&subset=devanagari,latin-ext');
+html,
+body {
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+}
+
+@keyframes showright {
+    0% {
+        transform: translateX(100%);
+    }
+    40% {
+        transform: translateX(0%);
+    }
+    80%,
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.showright {
+    animation: showright 1s ease forwards;
+}
+
+@keyframes hideright {
+    0% {
+        transform: translateX(0px);
+    }
+    40% {
+        transform: translateX(-5%);
+    }
+    80%,
+    100% {
+        opacity: 0;
+        pointer-events: none;
+        transform: translateX(100%);
+    }
+}
+
+.hideright {
+    animation: hideright 1s ease forwards;
+}
+
+@keyframes showleft {
+    0% {
+        transform: translateX(-100%);
+    }
+    40% {
+        transform: translateX(0%);
+    }
+    80%,
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.showleft {
+    animation: showleft 1s ease forwards;
+}
+
+@keyframes hideleft {
+    0% {
+        transform: translateX(0px);
+    }
+    40% {
+        transform: translateX(5%);
+    }
+    80%,
+    100% {
+        opacity: 0;
+        pointer-events: none;
+        transform: translateX(-100%);
+    }
+}
+
+.hideleft {
+    animation: hideleft 1s ease forwards;
+}
+
+#ui {
+    position: absolute;
+    top: 50%;
+}
+
+#wrapper {
+    height: auto;
+    margin-bottom: 10px;
+    min-width: 275px;
+    margin: 0 0 8px 0;
+    border-radius: 10px;
+}
+
+#main {
+    margin: 12px 16px 12px 56px;
+    position: relative;
+}
+
+#main::before {
+    font-size: 24px;
+    top: calc(50% - 12px);
+    left: -40px;
+    line-height: 24px;
+    position: absolute;
+}
+
+#message {
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.lightblue {
+    color: #00e5ff;
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+    font-size: 48px;
+    text-shadow: 0 0 10px #00bfff, 0 0 20px #1ec8ff, 0 0 40px #66d9ff, 0 0 80px #99eaff;
+}
+
+.darkyellow {
+    color: #ffee00;
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+    font-size: 48px;
+    text-shadow: 0 0 10px #e6a817, 0 0 20px #ffbb33, 0 0 40px #ffd966, 0 0 80px #ffe699;
+}
+
+.lightgreen {
+    color: #90ee90;
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+    font-size: 48px;
+    text-shadow: 0 0 10px #66b366, 0 0 20px #66cc66, 0 0 40px #66ff66, 0 0 80px #99ff99;
+}
+
+.white {
+    color: #ffffff;
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+    font-size: 48px;
+    text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 40px #ffffff, 0 0 80px #e0e0e0;
+}
+
+@keyframes showunder {
+    0% {
+        transform: translateY(100%);
+    }
+    40% {
+        transform: translateY(0%);
+    }
+    80%,
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.showunder {
+    animation: showunder 1s ease forwards;
+    right: 50px;
+}
+
+@keyframes hideunder {
+    0% {
+        transform: translateY(0px);
+    }
+    40% {
+        transform: translateY(5%);
+    }
+    80%,
+    100% {
+        opacity: 0;
+        pointer-events: none;
+        transform: translateY(100%);
+    }
+}
+
+.hideunder {
+    animation: hideunder 1s ease forwards;
+    right: 50px;
+}
